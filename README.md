@@ -1,6 +1,6 @@
 # aws-tools
 
-These tools provide various functions to manage many instances in many regions FIXME.
+These tools provide various functions to manage many instances in many regions all together.
 
 ## Prerequisites
 
