@@ -1,0 +1,12 @@
+# this prefix will be added to all resources that will be created
+name_prefix=my-bft
+# the name of a key pair that will be created
+keypair_name=my-keypair
+# the path to your public key, which will be used as your aws key pair
+pubkey_path='~/.ssh/id_rsa.pub'
+# instance type
+instance_type=t2.micro
+# a list of regions where this toolset manages
+region_list=my-region-list.txt
+# a list of OS image IDs for your instances
+image_list=my-image-list.txt
