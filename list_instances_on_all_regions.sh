@@ -1,6 +1,6 @@
 #!/bin/sh
 
-regions=`cat config.txt | grep '^region_list' | cut -d '=' -f 3-`
+regions=`cat config.txt | grep '^region_list' | cut -d '=' -f 2-`
 
 group_name=`cat config.txt | grep '^name_prefix' | cut -d '=' -f 2-`
 filter="--filters Name=\"tag:Group\",Values=\"$group_name\""

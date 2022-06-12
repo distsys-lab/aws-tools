@@ -1,9 +1,11 @@
 #!/bin/bash
 
+#set -x
+
 IFS='
 '
 
-regions=`cat config.txt | grep '^region_list' | cut -d '=' -f 3-`
+regions=`cat config.txt | grep '^region_list' | cut -d '=' -f 2-`
 
 for i in `cat $regions`
 do

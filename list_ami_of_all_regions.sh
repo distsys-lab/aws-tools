@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -x
+
 regions=`cat config.txt | grep '^region_list' | cut -d '=' -f 4-`
 
 build_date=`date +%Y-`
