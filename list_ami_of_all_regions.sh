@@ -2,7 +2,7 @@
 
 set -x
 
-regions=`cat config.txt | grep '^region_list' | cut -d '=' -f 4-`
+regions=`cat config.txt | grep '^region_list' | cut -d '=' -f 2`
 
 build_date=`date +%Y-`
 search_words_prefix="Canonical, Ubuntu, 22.04 LTS, amd64 jammy image build on "
