@@ -12,7 +12,7 @@ region=$1
 option="--region $region --output json"
 
 name=$2
-nmae_prefix=`cat config.txt | grep '^name_prefix' | cut -d '=' -f 2-`
+name_prefix=`cat config.txt | grep '^name_prefix' | cut -d '=' -f 2-`
 group=`cat config.txt | grep '^name_prefix' | cut -d '=' -f 2-`
 
 image_id=$3
