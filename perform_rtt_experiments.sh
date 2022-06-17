@@ -6,11 +6,12 @@
 export TZ=UTC
 
 # results will be stored here
-base_dir=/data/aws-inter-region-rtt
+base_dir=~/Desktop/aws-tools/data/aws-inter-region-rtt
 
-ssh_option="-i ~/.ssh/cloud-experiment"
+ssh_option="-i ~/.ssh/id_rsa"
 
-regions=(ohio virginia california oregon mumbai seoul singapore sydney tokyo canada frankfurt ireland london saopaulo)
+#regions=(ohio virginia california oregon mumbai seoul singapore sydney tokyo canada frankfurt ireland london saopaulo)
+regions=(ohio virginia)
 region_prefix=bft-
 
 user=ubuntu
