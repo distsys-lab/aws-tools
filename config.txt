@@ -10,3 +10,5 @@ instance_type=t2.micro
 region_list=my-region-list.txt
 # a list of OS image IDs for your instances
 image_list=my-image-list.txt
+# a list of IP addresses and host names
+hosts_list=my-hosts-list.txt
