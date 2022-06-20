@@ -12,6 +12,6 @@ do
 	region=`echo $i | cut -d : -f 1`
 	name=`echo $i | cut -d : -f 3`
 
-	echo $name
+	echo -n $name=
 	aws --region $region ec2 describe-addresses | jq -r ".Addresses[].PublicIp"
 done

@@ -1,7 +1,7 @@
 # this prefix will be added to all resources that will be created
-name_prefix=my-bft
+name_prefix=koya-bft
 # the name of a key pair that will be created
-keypair_name=my-keypair
+keypair_name=koya-dsl
 # the path to your public key, which will be used as your aws key pair
 pubkey_path='~/.ssh/id_rsa.pub'
 # instance type
@@ -10,3 +10,5 @@ instance_type=t2.micro
 region_list=my-region-list.txt
 # a list of OS image IDs for your instances
 image_list=my-image-list.txt
+# a list of IP addresses and host names
+hosts_list=my-hosts-list.txt
