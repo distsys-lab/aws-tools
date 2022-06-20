@@ -48,7 +48,7 @@ do
 		ssh $ssh_option $server -l $user $server_command $server_option $client > $output
 	done
 
-	echo ">> $i-Region-End: `now`"
+	echo ">> $i-Region-End: b`now`"
 done
 
 # finish time
