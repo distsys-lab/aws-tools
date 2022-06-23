@@ -143,6 +143,13 @@ Add a policy to the security group of VPC `friendly-name` in region `region-name
 ```
 add_rule_to_vpc.sh region-name friendly-name'
 ```
+## Experiment Preparation
+
+One IP address is specified for one host name.
+If more than one ip address is detected, you will need to specify them manually.
+```
+./list_all_elastic_ips.sh > my-hosts-list.txt
+```
 
 ## Perform experiments
 
