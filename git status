@@ -1,0 +1,37 @@
+* [33m5409e36[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Update .gitignore
+* [33m89a64b2[m Delete my-region-list.txt
+* [33macd9d30[m Delete my-image-list.txt
+* [33md31b795[m Update config.txt
+* [33m95a30a3[m Update .gitignore
+* [33me5fa406[m Update .gitignore
+*   [33ma20ad48[m Merge pull request #2 from skoya76/develop
+[32m|[m[33m\[m  
+[32m|[m *   [33md22cc59[m[33m ([m[1;31morigin/develop[m[33m)[m Merge pull request #1 from skoya76/feature-hosts
+[32m|[m [34m|[m[35m\[m  
+[32m|[m [34m|[m * [33m2c85aaf[m[33m ([m[1;31morigin/feature-hosts[m[33m, [m[1;32mfeature-hosts[m[33m)[m add hosts_lists
+[32m|[m [34m|[m * [33m2ba73bc[m change format -> name=ip
+[32m|[m [34m|[m * [33m3dfbde9[m auto name resolve
+[32m|[m [34m|[m * [33m79f2e83[m auto name resolve
+[32m|[m [34m|[m[34m/[m  
+[32m|[m * [33mfdbd213[m[33m ([m[1;32mdevelop[m[33m)[m base model
+[32m|[m * [33mb66c3ee[m base model
+[32m|[m * [33m1bff6fd[m new branch
+[32m|[m[32m/[m  
+[32m|[m * [33m42cfc35[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m check ignore
+[32m|[m[32m/[m  
+*   [33md60629a[m Merge branch 'distsys-lab:main' into main
+[1;31m|[m[1;32m\[m  
+[1;31m|[m * [33m0fbb815[m Update list_ami_of_all_regions.sh
+* [1;32m|[m [33m63eceaf[m[33m ([m[1;31morigin/personal[m[33m)[m Merge branch 'distsys-lab:main' into main
+[1;33m|[m[1;32m\[m[1;32m|[m 
+[1;33m|[m * [33m5f1bba8[m Update run_instance.sh
+* [1;34m|[m [33m33db321[m Update run_instance.sh
+[1;34m|[m[1;34m/[m  
+*   [33m4e64aff[m Merge pull request #1 from skoya76/patch-1
+[1;35m|[m[1;36m\[m  
+[1;35m|[m * [33m0ed3fbb[m[33m ([m[1;31morigin/patch-1[m[33m)[m Update list_ami_of_all_regions.sh
+[1;35m|[m[1;35m/[m  
+* [33m2cee1ce[m Update README.md
+* [33m8bf6361[m Fixed.
+* [33m2045c78[m Initial commit
+* [33m0983e55[m Initial commit

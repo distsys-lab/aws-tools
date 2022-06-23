@@ -2,15 +2,18 @@
 
 #set -x
 
+hosts_list=`cat config.txt | grep '^hosts_list' | cut -d '=' -f 2-`
+
 # use UTC throughout the experiment
 export TZ=UTC
 
 # results will be stored here
-base_dir=/data/aws-inter-region-rtt
+base_dir=~/Desktop/aws-tools/data/aws-inter-region-rtt
 
-ssh_option="-i ~/.ssh/cloud-experiment"
+ssh_option="-i ~/.ssh/id_rsa"
 
-regions=(ohio virginia california oregon mumbai seoul singapore sydney tokyo canada frankfurt ireland london saopaulo)
+#regions=(ohio virginia california oregon mumbai seoul singapore sydney tokyo canada frankfurt ireland london saopaulo)
+regions=(ohio n.virginia)
 region_prefix=bft-
 
 user=ubuntu
@@ -32,6 +35,8 @@ echo "> Experimetns-Start: `now`"
 for i in "${regions[@]}"
 do
 	server=$region_prefix$i
+	server_ip=`cat $hosts_list | grep $server | cut -d '=' -f 1`
+	echo "$server_ip"
 	mkdir -p $output_dir/$i
 
 	echo ">> $i-Region-Start: `now`"
@@ -39,15 +44,17 @@ do
 	for j in "${regions[@]}"
 	do
 		client=$region_prefix$j
+		client_ip=`cat $hosts_list | grep $client | cut -d '=' -f 1`
+		echo "$clinet_ip"
 		output=$output_dir/$i/$j.txt
 
 		echo ">>> $i-$j: `now`"
 
 		# start client
-		ssh $ssh_option $server -l $user $server_command $server_option $client > $output
+		ssh $ssh_option $server_ip -l $user $server_command $server_option $client_ip > $output
 	done
 
-	echo ">> $i-Region-End: `now`"
+	echo ">> $i-Region-End: b`now`"
 done
 
 # finish time
