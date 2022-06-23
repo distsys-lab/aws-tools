@@ -1,2 +1,0 @@
-us-east-2:ami-079b3f6abda6a6372:Canonical, Ubuntu, 22.04 LTS, amd64 jammy image build on 2022-06-16
-us-east-1:ami-0f65ab0fd913bc7be:Canonical, Ubuntu, 22.04 LTS, amd64 jammy image build on 2022-06-16
