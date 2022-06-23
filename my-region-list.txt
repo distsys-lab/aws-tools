@@ -1,2 +1,0 @@
-us-east-2:US East:ohio:Ohio
-us-east-1:US East:n.virginia:N. Virginia
