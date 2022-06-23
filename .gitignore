@@ -3,4 +3,4 @@ config.txt
 my-hosts-list.txt
 my-image-list.txt
 my-region-list.txt
-data
+data/
