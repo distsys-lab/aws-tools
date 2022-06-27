@@ -10,10 +10,10 @@ export TZ=UTC
 # results will be stored here
 base_dir=~/Desktop/aws-tools/data/aws-inter-region-rtt
 
-ssh_option="-i ~/.ssh/id_rsa"
+ssh_option="-i ~/.ssh/id_rsa -y"
 
 #regions=(ohio virginia california oregon mumbai seoul singapore sydney tokyo canada frankfurt ireland london saopaulo)
-regions=(ohio n.virginia)
+regions=(`cat my-hosts-list.txt | cut -d "=" -f 1`) #automatic selection from "my-hosts-list.txt"
 region_prefix=bft-
 
 user=ubuntu
@@ -34,18 +34,15 @@ echo "> Experimetns-Start: `now`"
 
 for i in "${regions[@]}"
 do
-	server=$region_prefix$i
-	server_ip=`cat $hosts_list | grep $server | cut -d '=' -f 1`
-	echo "$server_ip"
+
+	server_ip=`cat $hosts_list | grep $i | cut -d '=' -f 2`
 	mkdir -p $output_dir/$i
 
 	echo ">> $i-Region-Start: `now`"
 
 	for j in "${regions[@]}"
 	do
-		client=$region_prefix$j
-		client_ip=`cat $hosts_list | grep $client | cut -d '=' -f 1`
-		echo "$clinet_ip"
+		client_ip=`cat $hosts_list | grep $j | cut -d '=' -f 2`
 		output=$output_dir/$i/$j.txt
 
 		echo ">>> $i-$j: `now`"
