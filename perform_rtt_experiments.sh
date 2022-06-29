@@ -8,7 +8,7 @@ hosts_list=`cat config.txt | grep '^hosts_list' | cut -d '=' -f 2-`
 export TZ=UTC
 
 # results will be stored here
-base_dir=~/Desktop/aws-tools/data/aws-inter-region-rtt
+base_dir=~/aws-tools/data/aws-inter-region-rtt
 
 ssh_option="-i ~/.ssh/id_rsa -y"
 
