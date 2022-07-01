@@ -146,7 +146,7 @@ add_rule_to_vpc.sh region-name friendly-name'
 ## Experiment Preparation
 
 One IP address is specified for one host name.
-If more than one ip address is detected, you will need to specify them manually.
+
 ```
 ./list_instances_on_all_regions.sh | cut -d ':' -f 2,4 > my-hosts-list.txt
 ```
