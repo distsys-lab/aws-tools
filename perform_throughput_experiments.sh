@@ -42,7 +42,7 @@ do
 	echo ">> $i-Region-Start: `now`"
 
 	# start server
-	ssh $ssh_option $server_ip -l $user $server_command $server_option
+	ssh -oStrictHostKeyChecking=no $ssh_option $server_ip -l $user $server_command $server_option
 
 	for j in "${regions[@]}"
 	do
@@ -51,11 +51,11 @@ do
 
 		echo ">>> $i-$j: `now`"
 		# start client
-		ssh $ssh_option $client_ip -l $user $client_command $server_ip $client_option > $output
+		ssh -oStrictHostKeyChecking=no $ssh_option $client_ip -l $user $client_command $server_ip $client_option > $output
 	done
 
 	# cleanup iperf daemon
-	ssh $ssh_option $server_ip -l $user pkill $server_command
+	ssh -oStrictHostKeyChecking=no $ssh_option $server_ip -l $user pkill $server_command
 
 	echo ">> $i-Region-End: `now`"
 done
