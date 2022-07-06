@@ -13,7 +13,7 @@ region=$1
 option="--region $region --output json"
 
 subnet="10.0.0.0/16"
-key_name=`cat config.txt | grep '^keypair_name' | cut -d '=' -f 2-`
+keyname=`cat config.txt | grep '^keypair_name' | cut -d '=' -f 2-`
 pubkey_path=`cat config.txt | grep '^pubkey_path' | cut -d '=' -f 2-`
 
 echo create a vpc
