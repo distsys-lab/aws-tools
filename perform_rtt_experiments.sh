@@ -48,7 +48,7 @@ do
 		echo ">>> $i-$j: `now`"
 
 		# start client
-		ssh -oStrictHostKeyChecking=no $ssh_option $server_ip -l $user $server_command $server_option $client_ip > $output
+		ssh -oStrictHostKeyChecking=no $ssh_option $server_ip -l $user $server_command $server_option $client_ip > $output &
 	done
 
 	echo ">> $i-Region-End: b`now`"
