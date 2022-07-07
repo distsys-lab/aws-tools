@@ -49,7 +49,7 @@ aws ec2 $option authorize-security-group-ingress --group-id $sgid --protocol tcp
 aws ec2 $option  authorize-security-group-ingress --group-id $sgid --protocol icmp --port -1 --cidr 0.0.0.0/0
 
 echo register public key to the region $region
-aws ec2 $option import-key-pair --key-name $keyname --public-key-material file://$pubkey_path
+aws ec2 $option import-key-pair --key-name $keyname --public-key-material fileb://$pubkey_path
 
 echo vpc-id: $vpcid
 echo subnet-id: $subnetid
