@@ -3,7 +3,7 @@ name_prefix=koya-bft
 # the name of a key pair that will be created
 keypair_name=koya-dsl
 # the path to your public key, which will be used as your aws key pair
-pubkey_path='~/.ssh/id_rsa.pub'
+pubkey_path=~/.ssh/id_rsa.pub
 # instance type
 instance_type=t3.micro
 # a list of regions where this toolset manages
